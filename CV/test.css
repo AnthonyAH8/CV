@@ -1,0 +1,332 @@
+
+header{
+    display: block;
+    justify-content: space-around;
+    height: 150px;
+    margin-top: -15px;
+    background: linear-gradient(rgb(0, 190, 190, 0.2), hsl(81, 21%, 74%));
+    /* background-color: rgb(0, 190, 190,0.3); */
+    /* background-color: rgb(215, 215, 215);
+    text-shadow: 1px 1px 1px rgb(217, 217, 249);
+    border: thick double rgb(255, 255, 203); */
+    /* border-radius: 1em;
+    padding-top: 1em; */
+    /* margin-bottom: 1px; */
+}
+
+
+#image{
+    display: block;
+    padding-right: 50px;
+    margin-right: 50px;
+    border-radius: 90px;
+}
+
+img{
+    margin-right: 6px;
+}
+
+body{
+    background: linear-gradient(rgba(204, 255, 255, 0.2), rgb(255, 255, 255));
+    font-family: "Calibri", sans-serif;
+    text-indent: 5px;
+    text-align: justify;
+    /* background-image: url(./Images/arrièreplan.jpg);
+    background-repeat: repeat; */
+    /* padding-top: 3em; */
+    /* scroll-behavior: smooth; */
+}
+
+.article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 190, 190);
+    text-shadow:1px 1px 1px rgb(217, 217, 249);
+    text-decoration: underline;
+    text-align: center;
+    text-indent: 30px;
+    letter-spacing: -1px;
+}
+h3{
+    text-decoration: underline;
+    font-variant: small-caps;
+    text-align: center;
+    text-indent: 30px;
+    letter-spacing: 1px;
+    
+}
+
+h4{
+    font-style: italic;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white
+
+}
+
+nav li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white
+}
+
+.autres{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 1px;
+    width: auto;
+    height: 400px;
+    margin-top: 100px;
+    /* background-color: rgba(0, 190, 190, 0.813); */
+    /* color: whitesmoke; */
+}
+
+.overflow{
+    overflow: scroll;
+    padding-top: 15px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    height: 400px;
+    width: auto;
+    scroll-behavior: smooth;
+}
+
+.section{   
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* border-radius: 5px; */
+
+} 
+
+a:link{
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: green;
+}
+
+#image{
+    padding-top: 1%;
+    padding-left: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 40px;
+
+}
+
+#image2 {
+    float: left;
+    text-align: center;
+    margin-left: 30%;
+    border-radius: 50%;
+}
+#image3, #image4{
+    border-radius: 20%; 
+    margin-right: 10px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid;
+    color: black;
+}
+
+li{
+    list-style-position: outside;
+    background-color:rgb(0, 190, 190, 0.2);
+}
+
+button{
+  background-color: rgb(0, 190, 190, 0.5);
+  border: none;
+  border-radius: 12px;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: auto;
+  
+}
+
+button:hover{
+    transition-duration: 0.5s;
+    background-color: rgba(115, 163, 115, 0.918);
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+  }
+  
+button span:after {
+    /* content: '\00bb'; */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -100px;
+    transition: 0.5s;
+}
+  
+button:hover span {
+    padding-left: 20px;
+}
+  
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+      background: rgb(226, 226, 226);
+      color: black;
+      font-family: "Calibri", sans-serif;
+      text-indent: 10px;
+      text-align: justify;
+    }
+    
+    header{
+        display: block;
+        justify-content: space-around;
+        height: 145px;
+        margin-top: 1px;
+        background: linear-gradient(rgb(0, 190, 190, 0.2), hsl(81, 21%, 74%));
+        text-align: left;
+    } 
+
+    #image{
+        display: block;
+        margin-left: -40px;
+        margin-top: 8%;
+    }
+    a:link{
+        color: black;
+        text-decoration: underline;
+    }
+    
+    a:hover{
+        color: green;
+    }
+    .article {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    h1{
+        text-align: center;
+    }
+    
+    h2{
+        color: rgb(0, 190, 190);
+        text-shadow:1px 1px 1px rgb(217, 217, 249);
+        text-decoration: underline;
+        text-align: center;
+        text-indent: 10px;
+        letter-spacing: -1px;
+    }
+    h3{
+        text-decoration: underline;
+        font-variant: small-caps;
+        text-align: center;
+        text-indent: 10px;
+        letter-spacing: 1px;
+    }
+    button{
+      background-color: rgb(0, 190, 190, 0.2);
+      border: none;
+      border-radius: 12px;
+      color: black;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: auto;
+      
+    }
+    
+    button:hover{
+        transition-duration: 0.5s;
+        background-color: green;
+    }
+    
+    button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+      }
+      
+    button span:after {
+        /* content: '\00bb'; */
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -100px;
+        transition: 0.5s;
+    }
+      
+    button:hover span {
+        padding-left: 20px;
+    }
+      
+    button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    .autres{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-right: 1px;
+        height: 300px;
+        margin-top: 100px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: rgb(226, 226, 226);
+    }
+    
+    nav li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background: rgb(226, 226, 226);
+    }
+  }
